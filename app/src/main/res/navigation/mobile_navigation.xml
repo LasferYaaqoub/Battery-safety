@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_general">
+
+    <fragment
+        android:id="@+id/navigation_general"
+        android:name="com.example.batterysafety.ui.GeneralFragment"
+        android:label="@string/title_general"
+        tools:layout="@layout/fragment_general" />
+
+    <fragment
+        android:id="@+id/navigation_charging"
+        android:name="com.example.batterysafety.ui.ChargingFragment"
+        android:label="@string/title_charging"
+        tools:layout="@layout/fragment_charging" />
+
+    <fragment
+        android:id="@+id/navigation_functions"
+        android:name="com.example.batterysafety.ui.FunctionsFragment"
+        android:label="@string/title_functions"
+        tools:layout="@layout/fragment_functions" />
+</navigation>
